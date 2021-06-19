@@ -90,6 +90,7 @@ p{
 }
 .header{
   display: flex;
+  flex-wrap: nowrap;
   height:fit-content;
   margin:auto 0 auto 0;
   width:100%;
