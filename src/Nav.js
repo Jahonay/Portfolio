@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import {Link} from 'react-router-dom';g
+import {Link} from 'react-router-dom';
 
 //      Reminder to create hamburger toggle
 //      Dont just copy and paste this one
