@@ -1,38 +1,208 @@
+/*
+      Global Content
+      stuff that should
+      affect the whole
+      app or things
+      I want to repeat
+*/
+
 .App {
   text-align: center;
+}
+p{
+  display: block;
+  text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row-box{
+  height: fit-content;
+  min-height: 40vh;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row{
+  width:fit-content;
+  max-width: 85%;
+  height:100%;
+  min-height: 40vh;
+  min-width: 85%;
+  display:flex;
+  margin:auto auto auto auto;
+  padding:4rem 0 4rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row-item{
+  position: relative;
+  height:30rem;
+  width:20rem;
+  margin:10px;
+  padding:.5rem 1rem 3rem 1rem;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*border:2px solid aliceblue;*/
+}
+.row-item-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  height:80%;
+  margin:auto 0px auto 0px;
+  text-align: center;
+
+}
+.row-item-content h1{
+  text-align: center;
+  width:100%;
+  margin:auto;
+}
+.row-item-content p{
+  display:flex;
+  display:block;
+  margin:auto;
+  width:100%;
+}
+ @media only screen and (max-width:1000px) {
+    .row{
+      width:100%;
+      height:100%;
+    }
+    .row-item{
+      width:95%;
+    }
+  }
+*/
+/*
+  Nav section styling
+*/
+
+.header-box{
+  width:100%;
+  height:100px;
+  display:flex;
+
+}
+.header{
+  display: flex;
+  height:fit-content;
+  margin:auto 0 auto 0;
+  width:100%;
+  background-color: rgba(0, 88, 139, 0.3);
+  
+  
+}
+.header-content-left{
+  display:flex;
+  left:1rem;
+  margin:auto 0 auto 1rem;
+}
+.header a{
+  color:black;
+  text-decoration: none;
+}
+
+.header-content-right{
+  display: flex;
+  margin:auto 1rem auto auto;
+  
+}
+.header-content-right h1{
+  font-size: 1rem;
+  padding:1rem;
+}
+.header h1:hover{
+  color:rgb(255, 207, 50);
+  transform: scale(120%);
+}
+/*
+  End nav section styling
+*/
+
+/*
+  Hero section styling. 
+*/
+.hero-box{
+  width:100%;
+  height:104vh;
+  margin-top:-100px;
+  background-image: url('hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+.hero{
+  width:fit-content;
+  height:fit-content;
+  margin:auto auto 12% auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hero-content{
+  height:fit-content;
+  width:fit-content;
+  display:block;
+  margin:auto;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.hero-overlay{
+  width:100%;
+  height:100%;
+  display: flex;
+  background-color: rgba(0, 53, 102, 0.3);
+
+}
+.hero-content h1{
+  color:white;
+  font-size: 3rem;
+ /* background-color: rgb(0, 0, 0, 50%);*/
+  border-radius:5px;
+  padding:15px;
+}
+.hero-content Button{
+  color:white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius:5px;
+  background-color: rgba(16, 128, 255, 1);
+}
+/*
+ End Hero section styling. 
+*/
+
+/* 
+  About
+*/
+
+#about{
+  background-color: rgb(255, 255, 255);
+  background-image: url('CODE.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100vh;
+  color:white;
+  padding:0;
+}
+#about p{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.overlay-about{
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* 
+  End About
+*/
