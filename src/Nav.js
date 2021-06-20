@@ -36,6 +36,9 @@ function Nav() {
                 </div>
 
                 <div className="header-content-right">
+                    <Link to='/'>
+                        <h1>home</h1>
+                    </Link>
                     <Link to='/AboutPage'>
                         <h1>about me</h1>
                     </Link>

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import {TextField} from "@material-ui/core";
+import {TextField, Button } from "@material-ui/core";
 
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,53 +16,47 @@ const useStyles = makeStyles((theme) => ({
 function Contact(){
     const classes = useStyles();
     return(
+        <div className='contact'>
         <form className={classes.root} noValidate autoComplete="off">
+            <div className="row" id="contact">
+                <div className="label-holder">
+                    <div className="form-section">
+                        <label>Name</label>
+                    </div>
+                    <div className="form-section">
+                        <label>Email</label>
+                    </div>
+                    <div className="form-section">
+                        <label>Phone Number</label>
+                    </div>
+                    <div className="form-section">
+                        <label>Message</label>
+                    </div>
+                </div>
+                <div className="form holder">
+                    <div className="form-section">
+                        <TextField    required="true"/>
+                    </div>
+                        
+                    <div className="form-section">
+                        <TextField     required="true"/>
+                        
+                    </div>
+                    <div className="form-section">
+                        <TextField   required="true"/>
+                    </div>
+                    <div className="form-section">
+                        <TextField   multiline rowsMax={4}   variant="outlined" id="outlined-multiline-flexible"   />
+                    </div>
+                </div>
+                <div className="button-wrap">
+                    <Button type="submit" color="primary" variant="contained">Submit</Button>
+                </div>
+            </div>
             
-            <div>
-                <TextField error id="standard-error" label="Error" defaultValue="Hello World" />
-                <TextField
-                error
-                id="standard-error-helper-text"
-                label="Error"
-                defaultValue="Hello World"
-                helperText="Incorrect entry."
-                />
-            </div>
-            <div>
-                <TextField
-                error
-                id="filled-error"
-                label="Error"
-                defaultValue="Hello World"
-                variant="filled"
-                />
-                <TextField
-                error
-                id="filled-error-helper-text"
-                label="Error"
-                defaultValue="Hello World"
-                helperText="Incorrect entry."
-                variant="filled"
-                />
-            </div>
-            <div>
-                <TextField
-                error
-                id="outlined-error"
-                label="Error"
-                defaultValue="Hello World"
-                variant="outlined"
-                />
-                <TextField
-                error
-                id="outlined-error-helper-text"
-                label="Error"
-                defaultValue="Hello World"
-                helperText="Incorrect entry."
-                variant="outlined"
-                />
-            </div>
+            
         </form>
+        </div>
     );
 }
 export default Contact;

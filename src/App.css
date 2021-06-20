@@ -32,7 +32,6 @@ p{
   min-width: 85%;
   display:flex;
   margin:auto auto auto auto;
-  padding:4rem 0 4rem 0;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -68,6 +67,25 @@ p{
   margin:auto;
   width:100%;
 }
+/*
+.form-section{
+  display:flex;
+  width:100%;
+  margin:auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position:relative;
+  justify-content: center;
+}
+
+.form-section TextField{
+  margin:auto;
+  position: relative;
+  display: flex;
+  justify-self: center;
+}
+*/
+
  @media only screen and (max-width:1000px) {
     .row{
       width:100%;
@@ -78,6 +96,8 @@ p{
     }
   }
 */
+
+
 /*
   Nav section styling
 */
@@ -221,4 +241,37 @@ body.header-box{
 
 /* 
   End About
+*/
+
+/*
+  Contact start
+*/
+
+.label-holder .form-section{
+  margin:25px 0 25px 0;
+  text-align: right;
+}
+.row Button{
+  display:block !important;
+  text-align: center;
+  height:fit-content;
+  width:fit-content;
+  padding:10px;
+  margin:auto;
+}
+.button-wrap{
+  display:block;
+  width:100%;
+}
+.contact{
+  height:calc(100vh - 80px);
+  width:100%;
+  background-image: url('bg.png');
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*
+  Contact end
 */
