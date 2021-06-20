@@ -4,20 +4,12 @@ import {TextField, Button } from "@material-ui/core";
 
 import { makeStyles} from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& .MuiTextField-root': {
-        margin: theme.spacing(1),
-        width: 200,
-      },
-    },
-  }));
+
 
 function Contact(){
-    const classes = useStyles();
     return(
         <div className='contact'>
-        <form name="contact" method="POST" className={classes.root} noValidate autoComplete="off" data-netlify="true">
+        <form name="contact" method="POST"  data-netlify="true">
             <div className="row" id="contact">
                 <div className="label-holder">
                     <div className="form-section">
@@ -35,18 +27,18 @@ function Contact(){
                 </div>
                 <div className="form holder">
                     <div className="form-section">
-                        <TextField type="text" name="name"   required/>
+                        <TextField class ="textfield" type="text" name="name"   required/>
                     </div>
                         
                     <div className="form-section">
-                        <TextField   type="email" name="email"  required/>
+                        <TextField  class ="textfield"  type="email" name="email"  required/>
                         
                     </div>
                     <div className="form-section">
-                        <TextField type="text" name="phone number"  required/>
+                        <TextField class ="textfield" type="text" name="phone number"  required/>
                     </div>
                     <div className="form-section">
-                        <TextField type="text" name="message" required multiline rowsMax={4}   variant="outlined" id="outlined-multiline-flexible"   />
+                        <TextField class ="textfield" type="text" name="message" required multiline rowsMax={4}   variant="outlined" id="outlined-multiline-flexible"   />
                     </div>
                 </div>
                 <div className="button-wrap">
