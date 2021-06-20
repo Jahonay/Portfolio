@@ -82,7 +82,7 @@ p{
   Nav section styling
 */
 
-.header-box{
+body.header-box{
   width:100%;
   height:100px;
   display:flex;
@@ -90,18 +90,26 @@ p{
   flex-wrap: nowrap;
 
 }
-.header{
+.header-box.header{
   display: flex;
   flex-wrap: nowrap;
   margin:auto 0 auto 0;
   width:100%;
   background-color: rgba(0, 88, 139, 0.3);
   
-  
 }
+
+.header-content-wrapper{
+  height:fit-content;
+  width: 100%;
+  margin:auto;
+  display:flex;
+}
+
+
 .header-content-left{
   display:flex;
-  margin:auto 0 auto 1rem;
+  margin:auto auto auto 1rem;
 }
 .header a{
   color:black;

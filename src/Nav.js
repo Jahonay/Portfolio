@@ -28,19 +28,21 @@ function Nav() {
   return ( 
     <div className="header-box">
         <div className="header">
-            <div className="header-content-left">
-                <Link to='/'><h1>John Mackey</h1></Link>
-                
-                
-            </div>
+            <div className='header-content-wrapper'>
+                <div className="header-content-left">
+                    <Link to='/'><h1>John Mackey</h1></Link>
+                    
+                    
+                </div>
 
-            <div className="header-content-right">
-                <Link to='/AboutPage'>
-                    <h1>about me</h1>
-                </Link>
-                <Link to='ContactPage'>
-                    <h1>contact</h1>
-                </Link>
+                <div className="header-content-right">
+                    <Link to='/AboutPage'>
+                        <h1>about me</h1>
+                    </Link>
+                    <Link to='ContactPage'>
+                        <h1>contact</h1>
+                    </Link>
+                </div>
             </div>
         </div>
     </div>
