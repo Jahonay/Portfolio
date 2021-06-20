@@ -111,10 +111,14 @@ p{
 .header h1{
   display:inline-flex;
 }
+.header p{
+  display:inline-flex;
+}
 
 .header-content-right{
-  display: flex;
+  display: inline-flex;
   margin:auto 1rem auto auto;
+  flex-wrap:nowrap;
   
 }
 .header-content-right h1{
