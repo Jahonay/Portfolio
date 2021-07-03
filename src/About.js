@@ -5,7 +5,7 @@ function About() {
   <>
     <div className='row-box' id="about">
         <div className="overlay-about">
-            <div className="row">
+            <div className="row" id="about-row">
                 <div className="row-item">
                     <div className="row-item-content">
                         <h1>Quality work</h1>
